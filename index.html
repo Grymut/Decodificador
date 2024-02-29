@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="shortcut icon" href="./favicon.icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <ul class="header__icone">
+            <img class="header__imagem" src="./logo-alura.svg">
+            <img class="header__imagem" src="./onee.svd.webp">
+           </ul>
+           <nav class="cabecalho_links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">Sobre</a>
+        </nav>
+
+    </header>
+    <main class="apresentacao">
+        <h1> Decodificador </h1>
+        <!-- <textarea placeholder="fala" id="w3review" name="w3review" rows="4" cols="50">123</textarea> -->
+        
+        <div class="caixaDeTexto">
+            <textarea class="texto" placeholder="Digite um texto que você deseja criptografar ou descriptografar!" name="textArea" id="texto_conteudo" rows="20" cols="30"></textarea>
+            <!-- <textarea class="texto_descriptografado" name="textArea_descrip" id="texto_descrip" rows="50" cols="50"
+            placeholder="Digite seu texto aqui !"></textarea> -->
+            <div class="output-text">
+                <img id="imgdentro" src="./High quality products 1 1.svg" alt="Procurando mensagem ">
+                <p id="output-heading">Nenhuma mensagem <br> encontrada ainda!</p>
+                <p id="output-text"></p>
+        
+                <button onclick="copiarTexto()" class="main_button" id="copiarParaAreaDeTransferencia">Copiar</button>
+        
+            </div>  
+                
+
+        </div>
+
+        <div class="mensagem__alerta">
+            <img class="mensagem__alerta__imagem" src="./bi_exclamation-circle-fill.svg" alt="esclamação alerta">
+            <p class="mensagem__alerta__textoalerta"> Apenas letras minúsculas e sem acento. </p>
+        </div>
+
+        <div>
+
+            <button onclick="Criptografa()" class="main_button"> Criptografar </button>
+            <button onclick="Descriptografa()" class="main_button"> Descriptografar </button>
+        </div>
+    
+    
+    
+    </main>
+   
+    
+
+</body>
+<footer> Desenvolvido por Murilo Ribeiro </footer>
+
+</html>
